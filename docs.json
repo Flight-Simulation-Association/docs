@@ -1,14 +1,28 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Virtual Controller Supply",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#53c0da",
+    "light": "#e8dcb9",
+    "dark": "#384959"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/Icon.jpg",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Documentation",
+          "icon": "book-open-cover",
+          "href": "https://mintlify.com/docs"
+        },
+        {
+          "anchor": "Blog",
+          "icon": "newspaper",
+          "href": "https://mintlify.com/blog"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Guides",
@@ -49,6 +63,7 @@
       },
       {
         "tab": "API reference",
+        "hidden": true,
         "groups": [
           {
             "group": "API documentation",
@@ -67,31 +82,18 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/Light.png",
+    "dark": "/images/Dark.png",
+    "href": "https://virtualcontrollersupply.com"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:info@virtualcontrollersupply.com"
       }
     ],
     "primary": {
@@ -114,9 +116,14 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/FlightSimExpo",
+      "facebook": "https://www.facebook.com/FlightSimExpo",
+      "instagram": "https://www.instagram.com/FlightSimExpo",
+      "youtube": "https://www.youtube.com/c/FlightSimExp"
     }
+  },
+  "description": "Installation instructions, troubleshooting steps, and other assistance for Virtual Controller Supply products.",
+  "appearance": {
+    "strict": true
   }
 }
