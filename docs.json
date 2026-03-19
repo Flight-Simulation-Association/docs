@@ -7,7 +7,7 @@
     "light": "#e8dcb9",
     "dark": "#384959"
   },
-  "favicon": "/images/Icon.jpg",
+  "favicon": "/images/icon.png",
   "navigation": {
     "tabs": [
       {
@@ -74,8 +74,8 @@
     ]
   },
   "logo": {
-    "light": "/images/Dark.png",
-    "dark": "/images/Light.png",
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png",
     "href": "https://virtualcontrollersupply.com"
   },
   "navbar": {
