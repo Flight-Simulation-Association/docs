@@ -24,6 +24,7 @@
           },
           {
             "group": "Customization",
+            "hidden": true,
             "pages": [
               "essentials/settings",
               "essentials/navigation"
@@ -48,28 +49,21 @@
               "ai-tools/windsurf"
             ]
           }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "hidden": true,
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
+        ],
+        "global": {
+          "anchors": [
+            {
+              "anchor": "Feedback",
+              "href": "https://mintlify.com/docs",
+              "icon": "book-open-cover"
+            },
+            {
+              "anchor": "Support",
+              "href": "https://mintlify.com/docs",
+              "icon": "book-open-cover"
+            }
+          ]
+        }
       }
     ]
   },
@@ -81,27 +75,15 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
+        "label": "Contact Us",
         "href": "mailto:info@virtualcontrollersupply.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Main Website",
+      "href": "https://virtualcontrollersupply.com"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
