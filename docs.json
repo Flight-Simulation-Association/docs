@@ -9,30 +9,17 @@
   },
   "favicon": "/images/Icon.jpg",
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "https://mintlify.com/docs"
-        },
-        {
-          "anchor": "Blog",
-          "icon": "newspaper",
-          "href": "https://mintlify.com/blog"
-        }
-      ]
-    },
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Products",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "STARS Keyboard",
+            "icon": "keyboard",
             "pages": [
+              "quick-start",
               "index",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
@@ -44,6 +31,7 @@
           },
           {
             "group": "Writing content",
+            "hidden": true,
             "pages": [
               "essentials/markdown",
               "essentials/code",
@@ -53,6 +41,7 @@
           },
           {
             "group": "AI tools",
+            "hidden": true,
             "pages": [
               "ai-tools/cursor",
               "ai-tools/claude-code",
@@ -85,8 +74,8 @@
     ]
   },
   "logo": {
-    "light": "/images/Light.png",
-    "dark": "/images/Dark.png",
+    "light": "/images/Dark.png",
+    "dark": "/images/Light.png",
     "href": "https://virtualcontrollersupply.com"
   },
   "navbar": {
