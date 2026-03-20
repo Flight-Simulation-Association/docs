@@ -1,80 +1,168 @@
 ---
 title: "Troubleshooting"
-description: "Start building awesome documentation in minutes"
+description: "Diagnose issues related to the STARS Keyboard."
+icon: gear-complex-code
 ---
 
-## Get started in three steps
-
-Get your documentation site running locally and make your first customization.
-
-### Step 1: Set up your local environment
-
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
-
-### Step 2: Deploy your changes
-
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
-
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
-
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
-
-### Step 3: Go live
-
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
-
-## Next steps
-
-Now that you have your docs running, explore these key features:
-
-<CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
-</CardGroup>
-
 <Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
+  **Please complete the steps on this page before contacting us for support,** as it will greatly assist us in solving the issue.
 </Note>
+
+This guide is intended to diagnose whether an issue with the STARS Keyboard is caused by:
+
+- Your computer
+- CRC
+- The STARS Keyboard itself
+- Something else
+
+Follow each step in order.
+
+## Step 1: Test Standard Keyboard
+
+As discussed in the [keymap guide](/keymap), the keyboard is a composite USB device with some keys that act like a standard keyboard, and others that act like a joystick-style input. This step confirms that your computer recognizes the standard keyboard keys properly.
+
+### Open a Text Editor
+
+<AccordionGroup>
+  <Accordion title='Windows' icon="windows">
+  Open a text editor like Notepad, Microsoft Word, or similar.
+
+    1. Click the **Start Menu**
+    2. Type `Notepad`
+    3. Open **Notepad**
+  </Accordion>
+
+  <Accordion title="macOS" icon="apple">
+  Open a text editor like TextEdit, Microsoft Word, or similar.
+
+    1. Press `Command (⌘) + Space`
+    2. Type `TextEdit`
+    3. Press Enter to open **TextEdit**
+  </Accordion>
+</AccordionGroup>
+
+### Test
+
+1. Press several of the white `A-Z` keys on the STARS Keyboard.
+2. Confirm that the characters you pressed appear in the text editor.
+
+### Result
+
+<Check>
+  If the characters appear correctly, continue to [Step 2](#step-2-test-gamepad-keys).
+</Check>
+
+<Danger>
+  If no input appears, skip to [Debugging: Keyboard Not Detected](#debugging-keyboard-not-detected).
+</Danger>
+
+## Step 2: Test Gamepad Keys
+
+This step confirms that your computer recognizes the joystick or gamepad-style keys properly.
+
+### Open a Button Tester
+
+<AccordionGroup>
+  <Accordion title='Windows' icon="windows">
+    Use an online tool like [Gamepad Tester](https://hardwaretester.com/gamepad) or install a third-party application such as the [VKB Button Tester](https://vkbsimcontrollers.com/pages/downloads).
+
+    To use the online tool:
+
+    1. Ensure the device is plugged in
+    2. Navigate to the page linked above
+    3. Press any of the keys in the top row of the STARS Keyboard to detect the device 
+  </Accordion>
+
+  <Accordion title="macOS" icon="apple">
+    Use an online tool like [Gamepad Tester](https://hardwaretester.com/gamepad), or install a third-party application. 
+
+    To use the online tool:
+
+    1. Ensure the device is plugged in
+    2. Navigate to the page linked above
+    3. Press any of the keys in the top row of the STARS Keyboard to detect the device 
+  </Accordion>
+</AccordionGroup>
+
+### Test
+
+1. Press any of the keys in the top row of the STARS Keyboard
+2. As you press the keyboard keys, watch the button tester application for buttons lighting up or other indications that keypresses are being recognized.
+
+### Result
+
+<Check>
+  If the buttons respond when pressed, continue to [Step 3](#step-3-check-crc).
+</Check>
+
+<Danger>
+  If the buttons **do not** respond, try unplugging/replugging the device and repeat Step 2. If the issue persists, this may indicate a connection or hardware issue. [Reach out for support](/support).
+</Danger>
+
+## Step 3: Check CRC
+
+If you completed Steps 1 and 2 successfully, then your STARS Keyboard and computer are functioning correctly. At this point, the issue is most likely related to CRC not properly detecting or handling device inputs.
+
+### Things to Try
+
+1. Unplug and then replug in the device.
+2. Restart CRC completely.
+3. Restart your computer and then relaunch CRC.
+4. Check the CRC logs for messages related to the STARS Keyboard.
+
+### Next Steps
+
+If the issue persists, please [contact us](/support) and send:
+
+1. Your CRC logs
+2. Your operating system
+3. A description of the issue
+4. What troubleshooting steps you've tried from this page, and the results.
+
+We can review the logs and, if needed, coordinate directly with the CRC team to help resolve the issue.
+
+## Debugging: Keyboard Not Detected
+
+If the standard keyboard keys do not work in Step 1, your computer is not recognizing the device correctly.
+
+### Try This First
+1. Unplug the keyboard
+2. Plug it back in firmly
+3. Try a different USB port on your computer, and avoid USB hubs if possible.
+
+### Then, Check if the Device is Recognized
+
+<AccordionGroup>
+  <Accordion title='Windows' icon="windows">
+    Check the Windows Device Manager
+
+    1. Press the **Start Menu**
+    2. Type `Control Panel`
+    3. Open **Control Panel**
+    4. Click **Devices and Printers**
+
+    Look for a device called `STARS Keyboard` in the **Devices** or **Unspecified** sections. It may also appear as a **USB Input Device**, **HID-compliant device**, or a similar generic name.
+  </Accordion>
+
+  <Accordion title="macOS" icon="apple">
+    Check System Information
+
+    1. Click the **Apple Menu** in the top-left
+    2. Click **About This Mac**
+    3. Click **More Info**
+    4. Scroll to the bottom of the **General** page and click **System Report**
+    5. In the left sidebar, click **USB**
+
+    Look for a device called `STARS Keyboard`, or one that appears when the keyboard is plugged in.
+  </Accordion>
+</AccordionGroup>
+
+### Result
+
+<Check>
+  If the device appears in the list, [try Step 1 again](#step-1-test-standard-keyboard).
+</Check>
+
+<Danger>
+  If the device does **not** appear in the list, this may indicate a connection or hardware issue. [Reach out for support](/support).
+</Danger>

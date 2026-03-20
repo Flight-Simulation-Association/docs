@@ -24,47 +24,14 @@
             ]
           },
           {
-            "group": "Customization",
-            "hidden": true,
+            "group": "Feedback & Support",
+            "icon": "lightbulb",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "hidden": true,
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "hidden": true,
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "feedback",
+              "support"
             ]
           }
-        ],
-        "global": {
-          "anchors": [
-            {
-              "anchor": "Feedback",
-              "href": "https://mintlify.com/docs",
-              "icon": "book-open-cover"
-            },
-            {
-              "anchor": "Support",
-              "href": "https://mintlify.com/docs",
-              "icon": "book-open-cover"
-            }
-          ]
-        }
+        ]      
       }
     ]
   },
@@ -76,8 +43,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Contact Us",
-        "href": "mailto:info@virtualcontrollersupply.com"
+        "label": "Support",
+        "href": "/support"
       }
     ],
     "primary": {
@@ -97,5 +64,8 @@
   "description": "Installation instructions, troubleshooting steps, and other assistance for Virtual Controller Supply products.",
   "appearance": {
     "strict": true
+  },
+  "background": {
+    "decoration": "grid"
   }
 }
