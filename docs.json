@@ -17,9 +17,10 @@
             "group": "STARS Keyboard",
             "icon": "keyboard",
             "pages": [
-              "quick-start",
               "index",
-              "quickstart"
+              "quickstart",
+              "keymap",
+              "troubleshooting"
             ]
           },
           {
