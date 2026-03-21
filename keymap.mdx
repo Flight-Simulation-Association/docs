@@ -6,7 +6,7 @@ icon: key
 
 ## Keyboard Layout
 
-The image below shows the full keyboard layout. Each key is labeled with a number, which is referenced in the keymap tables further down this page.
+The image below shows the full keyboard layout. Each key is labeled with a number, which is referenced in the keymap tables on this page.
 
 ![STARS Keyboard Layout](/images/keymap.png)
 
@@ -88,7 +88,7 @@ The keyboard is a composite USB device, meaning that some keys act like a standa
 
 | Key # | Key Text | Function |
 |-------|----------|----------|
-| 35 | `F9` | No Function |
+| 35 | `F9` | `VFR PLAN` key, as discussed in CRC documentation |
 | 36 | `F10` | No Function |
 | 37 | `CA` | Refer to CRC documentation |
 | 38 | `F12` | No Function |
@@ -159,14 +159,16 @@ The keyboard is a composite USB device, meaning that some keys act like a standa
 | 83 | `0` | Equivalent to numpad `0` key. |
 | 84 | [BLANK] | Equivalent to keyboard `CTRL` key. |
 
-## Hidden Shortcut Keys
+## VATSIM Shortcut Keys
 
-As shown in the keymap tables above and in the image below, the STARS Keyboard includes hidden `SHIFT`, `CTRL`, and `TAB` keys.
+As shown in the keymap tables above and in the image below, the STARS Keyboard includes hidden `SHIFT`, `CTRL` / `Command ⌘`, and `TAB` keys.
 
 These keys are provided to support common VATSIM and CRC shortcuts, such as direct messaging and command variations.
 
 <Note>
-  **Note:** The `CTRL` shorcut behaves as a standard `Control` key, even on macOS. It does **not** act as the `Command ⌘` key.  
+  **Note:** The `CTRL` shortcut will automatically behave as `Control` on Windows or `Command ⌘` on macOS, depending on your operating system.
+
+  In some setups (such as those with certain USB hubs), automatic detection may not work correctly. In those cases, the key will default to behaving as a standard `Control` key.
 </Note>
 
 ![STARS Keyboard Layout](/images/shortcuts.png)
